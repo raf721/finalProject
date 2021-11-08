@@ -5,8 +5,10 @@ import './App.css';
 function App() {
   return (
     <div className="App">
-      <h1><b>forumerrorly</b></h1>
-      <h2><i>Made by the best team in the world B)</i></h2>
+      <h1 style={{color: "violet"}}><b>forumerrorly</b></h1>
+      <p style = {{color: "pink"}}><i>Made by the best team in the world B)</i></p>
+
+      {/* thread list below */}
       <ol>
         <li class="row">
           <a href="/item">
