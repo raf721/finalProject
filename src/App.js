@@ -1,14 +1,19 @@
+import React from 'react';
 import './App.css';
+import {Outlet, Link} from "react-router-dom";
+
 
 // run "npm start" in terminal to see webpage
 
-function App() {
+ function App() {
   return (
     <div className="App">
-      <h1 style={{color: "violet"}}><b>forumerrorly</b></h1>
-      <p style = {{color: "pink"}}><i>Made by the best team in the world B)</i></p>
+      <h1 style={{ color: "violet" }}>
+        <b>forumerrorly</b>
+      </h1>
+      <p style={{ color: "pink" }}><i>Made by the best team in the world B)</i></p>
 
-      {/* thread list below */}
+      {/* thread list below
       <ol>
         <li class="row">
           <a href="/item">
@@ -16,8 +21,30 @@ function App() {
           </a>
         </li>
       </ol>
+      */}
+
+      <nav 
+      style = {{
+        color: "white",
+        borderBottom: "solid 1px",
+        paddingBottom:"1rem",
+        font: "corsiva"
+      }}
+      >
+        <p style={{color:"white"}}>
+          <Link to = "/"><b>Home</b></Link>
+        </p>
+        <p style={{color:"white"}}>
+          <Link to = "/Settings"><b>Settings</b></Link>
+        </p>
+        <p style={{color:"white"}}>
+          <Link to = "/Post"><b>Post</b></Link>
+        </p>
+      </nav>
+      <Outlet />
     </div>
-  );
+     
+  )
 }
 
 export default App;
