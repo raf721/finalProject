@@ -32,13 +32,36 @@ import {Outlet, Link} from "react-router-dom";
       }}
       >
         <p style={{color:"white"}}>
-          <Link to = "/"><b>Home</b></Link>
+          <Link to = "/" style = {{
+            color: "white",
+            textDecoration: 'none'
+          }}>
+            <b>Home</b>
+          </Link>
         </p>
         <p style={{color:"white"}}>
-          <Link to = "/Settings"><b>Settings</b></Link>
+          <Link to = "/Forum" style = {{
+            color: "white",
+            textDecoration: 'none'
+          }}>
+            <b>Forum</b>
+          </Link>
         </p>
         <p style={{color:"white"}}>
-          <Link to = "/Post"><b>Post</b></Link>
+          <Link to = "/Post" style = {{
+            color: "white",
+            textDecoration: 'none'
+          }}>
+            <b>Post</b>
+          </Link>
+        </p>
+        <p style={{color:"white"}}>
+          <Link to = "/Settings" style = {{
+            color: "white",
+            textDecoration: 'none'
+          }}>
+            <b>Settings</b>
+          </Link>
         </p>
       </nav>
       <Outlet />
