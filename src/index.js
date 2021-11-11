@@ -4,8 +4,9 @@ import {BrowserRouter, Routes, Route} from "react-router-dom";
 import './index.css';
 import App from './App';
 import Home from "./routes/Home";
-import Settings from "./routes/Settings";
+import Forum from "./routes/Forum";
 import Post from "./routes/Post";
+import Settings from "./routes/Settings";
 import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
@@ -13,8 +14,9 @@ ReactDOM.render(
     <Routes>
       <Route path="/" element={<App />}>
         <Route path="/" element={<Home />} />
-        <Route path="Settings" element={<Settings />} />
+        <Route path="Forum" element={<Forum />} />
         <Route path="Post" element={<Post />} />
+        <Route path="Settings" element={<Settings />} />
       </Route>
     </Routes>
   </BrowserRouter>,
