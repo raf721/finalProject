@@ -31,38 +31,42 @@ import {Outlet, Link} from "react-router-dom";
         font: "corsiva"
       }}
       >
-        <p style={{color:"white"}}>
+        <li style={{display: 'inline-block'}}>
           <Link to = "/" style = {{
             color: "white",
-            textDecoration: 'none'
+            textDecoration: 'none',
+            marginRight: '20px'
           }}>
-            <b>Home</b>
+            <b> Home </b>
           </Link>
-        </p>
-        <p style={{color:"white"}}>
+        </li>
+        <li style={{display: 'inline-block'}}>
           <Link to = "/Forum" style = {{
             color: "white",
-            textDecoration: 'none'
+            textDecoration: 'none',
+            marginRight: '20px'
           }}>
-            <b>Forum</b>
+            <b> Forum </b>
           </Link>
-        </p>
-        <p style={{color:"white"}}>
+        </li>
+        <li style={{display: 'inline-block'}}>
           <Link to = "/Post" style = {{
             color: "white",
-            textDecoration: 'none'
+            textDecoration: 'none',
+            marginRight: '20px'
           }}>
-            <b>Post</b>
+            <b> Post </b>
           </Link>
-        </p>
-        <p style={{color:"white"}}>
+        </li>
+        <li style={{display: 'inline-block'}}>
           <Link to = "/Settings" style = {{
             color: "white",
-            textDecoration: 'none'
+            textDecoration: 'none',
+            marginRight: '20px'
           }}>
-            <b>Settings</b>
+            <b> Settings </b>
           </Link>
-        </p>
+        </li>
       </nav>
       <Outlet />
     </div>
