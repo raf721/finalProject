@@ -13,16 +13,6 @@ import {Outlet, Link} from "react-router-dom";
       </h1>
       <p style={{ color: "pink" }}><i>Made by the best team in the world B)</i></p>
 
-      {/* thread list below
-      <ol>
-        <li class="row">
-          <a href="/item">
-            <h3 class="title">First Thread</h3>
-          </a>
-        </li>
-      </ol>
-      */}
-
       <nav 
       style = {{
         color: "white",
@@ -32,7 +22,7 @@ import {Outlet, Link} from "react-router-dom";
       }}
       >
         <li style={{display: 'inline-block'}}>
-          <Link to = "/" style = {{
+          <Link to = "/Home" style = {{
             color: "white",
             textDecoration: 'none',
             marginRight: '20px'
@@ -40,6 +30,7 @@ import {Outlet, Link} from "react-router-dom";
             <b> Home </b>
           </Link>
         </li>
+
         <li style={{display: 'inline-block'}}>
           <Link to = "/Forum" style = {{
             color: "white",
@@ -49,15 +40,7 @@ import {Outlet, Link} from "react-router-dom";
             <b> Forum </b>
           </Link>
         </li>
-        <li style={{display: 'inline-block'}}>
-          <Link to = "/Post" style = {{
-            color: "white",
-            textDecoration: 'none',
-            marginRight: '20px'
-          }}>
-            <b> Post </b>
-          </Link>
-        </li>
+
         <li style={{display: 'inline-block'}}>
           <Link to = "/Settings" style = {{
             color: "white",
@@ -65,6 +48,16 @@ import {Outlet, Link} from "react-router-dom";
             marginRight: '20px'
           }}>
             <b> Settings </b>
+          </Link>
+        </li>
+
+        <li style={{display: 'inline-block'}}>
+          <Link to = "/Logout" style = {{
+            color: "white",
+            textDecoration: 'none',
+            marginRight: '20px'
+          }}>
+            <b> Logout </b>
           </Link>
         </li>
       </nav>

@@ -5,7 +5,7 @@ import './index.css';
 import App from './App';
 import Home from "./routes/Home";
 import Forum from "./routes/Forum";
-import Post from "./routes/Post";
+import Logout from "./routes/Logout";
 import Settings from "./routes/Settings";
 import reportWebVitals from './reportWebVitals';
 
@@ -13,9 +13,9 @@ ReactDOM.render(
   <BrowserRouter>
     <Routes>
       <Route path="/" element={<App />}>
-        <Route path="/" element={<Home />} />
+        <Route path="Home" element={<Home />} />
         <Route path="Forum" element={<Forum />} />
-        <Route path="Post" element={<Post />} />
+        <Route path="Logout" element={<Logout />} />
         <Route path="Settings" element={<Settings />} />
       </Route>
     </Routes>
